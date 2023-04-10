@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-styles": "sass app/sass/styles.scss app/css/styles.css",
+    "build-styles:dev": "sass --whatch app/sass/styles.scss app/css/styles.css"
   },
   "keywords": [],
   "author": "jordi-calles",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.61.0"
   }
 }
